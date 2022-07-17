@@ -35,6 +35,11 @@
         background-position: right 1px top 1px;
         height: 80vh;
     }
+
+    .card {
+        /* background: rgb(2, 0, 36);
+        background: linear-gradient(34deg, rgba(2, 0, 36, 1) 0%, rgba(208, 200, 200, 0.7371323529411764) 30%, rgba(181, 180, 185, 0.2553396358543417) 38%, rgba(0, 212, 255, 1) 100%); */
+    }
 </style>
 
 <body class="p-0">
@@ -54,7 +59,7 @@
                     <li class="nav-item me-lg-3"><a href="#client" class="nav-link text-white">Our Client</a></li>
                     <li class="nav-item me-lg-3"><a href="#tools" class="nav-link text-white">Tech Stack</a></li>
                 </ul>
-                <button class="p-2 offset-lg-2 me-4 col-1 btn btn-lg btn-outline-primary">Login</button>
+                <a class="p-2 offset-lg-2 me-4 col-1 btn btn-lg btn-outline-primary" id="#login">Login</a>
             </nav>
         </header>
         <section class="bg-dark text-white py-5 row row-cols-sm-1 headline">
@@ -162,11 +167,98 @@
             </div>
         </section>
 
-        <section id="project">
-            <div class="card-group">
-                <div class="card">
+        <section id="project" class="bg-dark">
+            <nav class="p-4 bg-dark text-center sticky-top">
+                <span class="fs-2 text-white text-bold">Project we complete so far!</span>
+            </nav>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3 m-2 fs-4 fw-normal">
+                <div class="col">
+                    <div class="card">
+                        <img src="image/icon.jpg" alt="Aleaw Mobile" class="card-img-top me-auto">
+                        <div class="card-header">
+                            <h2 class="card-title text-center text-primary">Alewa Stock</h2>
+                        </div>
+                        <div class="card-body">
 
+                            <div class="card-text">
+                                You lose customers every day. Maybe after their first purchase, or right after signing
+                                up. We can help you focus Design
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="btn btn-lg btn-outline-danger text-uppercase">See More</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col">
+                    <div class="card card2">
+                        <img src="image/sekela.png" alt="Aleaw Mobile" class="card-img-top">
+                        <div class="card-header">
+                            <h2 class="card-title text-center text-primary">Skela Commerece</h2>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                You lose customers every day. Maybe after their first purchase
+                                help you focus Design. Don't lose customers every day. Maybe after their first purchase,
+                                or right after signing
+                                up.
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="" class="btn btn-lg btn-outline-danger text-uppercase">See more</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="image/keteraraw.jpg" alt="Aleaw Mobile" class="card-img-top">
+                        <div class="card-header">
+                            <h2 class="card-title text-center text-primary">Keteraraw</h2>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                You lose customers every day. Maybe after their first purchase, or right after signing
+                                up.
+                                We can
+                                help you focus Desigg. Keteraraw is the most fast growing platform.
+                            </div>
+                        </div>
+                        <div class="card-footer text-center text-uppercase">
+                            <a href="" class="btn btn-lg btn-outline-danger">See More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tools">
+            <nav class="p-4 bg-dark text-center sticky-top">
+                <span class="fs-2 text-white text-bold">Our Company Tech Stack!</span>
+            </nav>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 gx-3">
+                <div class="col-lg-4 col-sm-1 justify-content-lg-center">
+                    <ul class="nav flex-sm-column ">
+                        <li class="nav-item">Language</li>
+                        <li class="nav-item">Language</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="nav flex-sm-column ">
+                        <li class="nav-item">Language</li>
+                        <li class="nav-item">Language</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="nav flex-sm-column ">
+                        <li class="nav-item">Language</li>
+                        <li class="nav-item">Language</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
     </main>
