@@ -15,11 +15,17 @@
         rel="stylesheet">
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         font-family: "Inter", sans-serif;
         vertical-align: middle;
         letter-spacing: 0.03em;
         line-height: 32px;
+        overflow-x: hidden;
     }
 
     .headline {
@@ -31,24 +37,24 @@
     }
 </style>
 
-<body>
+<body class="p-0">
     <main class="container-fluid p-0">
-        <header class="navbar navbar-expand-lg bg-dark navbar-light stycy-top">
+        <header class="navbar navbar-expand-lg bg-dark navbar-light navbar-text sticky-top">
             <a href="index.html" class="navbar-brand text-dark px-2"><img src="image/logo.jpg" alt="logo"> <span
                     class="text-primary fw-bold">Mount Technology</span></a>
 
-            <button class="navbar-toggler" data-bs-target="#menubar" data-bs-toggle="collapse">
+            <a class="navbar-toggler" data-bs-target="#menubar" data-bs-toggle="collapse">
                 <span class="navbar-toggler-icon bg-dark"></span>
-            </button>
+            </a>
 
             <nav class="collapse navbar-collapse justify-content-lg-end ps-4" id="menubar">
                 <ul class="navbar-nav text-white fs-5 fw-bolder fst-normal ">
-                    <li class="nav-item"><a href="#service" class="nav-link active text-white">Services</a></li>
-                    <li class="nav-item"><a href="#project" class="nav-link text-white">Project</a></li>
-                    <li class="nav-item"><a href="#client" class="nav-link text-white">Our Client</a></li>
-                    <li class="nav-item me-lg-2"><a href="#tools" class="nav-link text-white">Tech Stack</a></li>
+                    <li class="nav-item me-lg-3"><a href="#service" class="nav-link active text-white">Services</a></li>
+                    <li class="nav-item me-lg-3"><a href="#project" class="nav-link text-white">Project</a></li>
+                    <li class="nav-item me-lg-3"><a href="#client" class="nav-link text-white">Our Client</a></li>
+                    <li class="nav-item me-lg-3"><a href="#tools" class="nav-link text-white">Tech Stack</a></li>
                 </ul>
-                <button class="p-2 offset-lg-2 me-4 col-1">Login</button>
+                <button class="p-2 offset-lg-2 me-4 col-1 btn btn-lg btn-outline-primary">Login</button>
             </nav>
         </header>
         <section class="bg-dark text-white py-5 row row-cols-sm-1 headline">
@@ -71,13 +77,98 @@
                             class="fa-brands fa-linkedin-in text-white"></i></a></li>
                 <li class="nav-item pb-2"><a href="https://twitter.com/home"><i
                             class="fa-brands fa-twitter text-white"></i></a></li>
+                <i class="fa-thin fa-laptop-mobile text-white"></i>
                 <li class="nav-item pb-2"><a href="#"><i class="fa-brands fa-medium text-white"></i></a></li>
             </ul>
         </section>
-        <section class="" id="service">
+        <section class="row" id="service">
+            <div class="bg-light p-3 sticky-top">
+                <ul class="nav nav-tabs justify-content-lg-center p-3 fs-4 flex-sm-column flex-lg-row">
+                    <li class="nav-item"><a class="nav-link active" href="#mobileapp">Mobile Development</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#erpservices">ERP Solution</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#webapp">Web Application Development</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ui">Graphical Design</a></li>
+                </ul>
+            </div>
+            <h1 class="text-center fs-1 fw-bolder p-3 m-4">Our Key Services</h1>
+            <p class="mx-auto col-lg-8 fs-5 lh-4 col-sm-1">
+                Let’s increase lead conversion by 500%. Attract millions of eyeballs. Convert 200% of your new
+                prospects. Build
+                something amazing. Improve engagement by 3000%. We’ve made it happen. We’ll use design + data to improve
+                your business
+                outcomes. A great user experience isn’t just something to be proud of; it’s how you grow your business.
+            </p>
+            <div id="mobileapp" class="col-lg-8 mx-auto">
+                <h2 class="text-primary text-center ps-5 m-4"> Mobile Development</h2>
+                <img src="image/mobileapp.png" alt="mobile app develoment" class="img-fluid my-3">
 
+                <p class="px-4 fs-5 lh-5">
+                    You don’t have a great mobile or web app. You're envious of the other apps you use. We’re pioneers
+                    in responsive web and
+                    have designed mobile apps for over a decade. We’ll design a mobile application that works on iOS,
+                    Android or the web
+                    with a special emphasis on cross platform unity. We’ll turn your app experience into something your
+                    users crave by using
+                    data to inform our decisions.
+                </p>
+                <a class="btn btn-lg btn-outline-primary">Read More</a>
+
+            </div>
+
+            <div id="erpservices" class="col-lg-8 mx-auto">
+                <h2 class="text-primary text-center ps-5 m-4"> Our ERP Solution</h2>
+                <p class="px-4 fs-5 lh-5">
+                    You don’t have a great mobile or web app. You're envious of the other apps you use. We’re pioneers
+                    in responsive web and
+                    have designed mobile apps for over a decade. We’ll design a mobile application that works on iOS,
+                    Android or the web
+                    with a special emphasis on cross platform unity. We’ll turn your app experience into something your
+                    users crave by using
+                    data to inform our decisions.
+                </p>
+                <a class="btn btn-lg btn-outline-primary">Read More</a>
+
+            </div>
+            <div id="webapp" class="col-lg-8 mx-auto">
+                <h2 class="text-primary text-center ps-5 m-4"> Web Development</h2>
+                <img src="image/webapp.png" alt="web app development" class="img-fluid my-3">
+                <p class="px-4 fs-5 lh-5">
+                    You don’t have a great mobile or web app. You're envious of the other apps you use. We’re pioneers
+                    in responsive web and
+                    have designed mobile apps for over a decade. We’ll design a mobile application that works on iOS,
+                    Android or the web
+                    with a special emphasis on cross platform unity. We’ll turn your app experience into something your
+                    users crave by using
+                    data to inform our decisions.
+                </p>
+                <a class="btn btn-lg btn-outline-primary">Read More</a>
+
+            </div>
+
+            <div id="ui" class="col-lg-8 mx-auto">
+                <h2 class="text-primary text-center ps-5 m-4"> Growth Design</h2>
+                <img src="image/ui.jpg" alt="Graphical design" class="img-fluid my-3">
+
+                <p class="px-4 fs-5 lh-5">
+                    You lose customers every day. Maybe after their first purchase, or right after signing up. We can
+                    help you focus Design,
+                    Product and Engineering on retention and reactivation solutions. You may also need adjusted pricing
+                    or copy rewritten in
+                    the conversion funnel. We use behavioral data to better understand why people may be clicking off
+                    our site.
+                </p>
+                <a class="btn btn-lg btn-outline-primary">Read More</a>
+
+            </div>
         </section>
 
+        <section id="project">
+            <div class="card-group">
+                <div class="card">
+
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://kit.fontawesome.com/4b734b770b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
